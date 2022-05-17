@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page for assignment 1 in course WEB</title>
+    <link rel="stylesheet" href="..//static/DogsDesign.css">
+    <script defer src="..//static/DogsFunctions.js"></script>
 </head>
 <body>
-    <center>
-        <h2 style="color: rgb(0, 128, 96);border: 3px solid rgb(2, 9, 14);margin: 5px; padding: 5px;">A Dogs Life</h2>
-        <img src="../static/dog.jpg" alt="Dog" width="328">
-    </center>
-   
-    <center> 
+    <div id="container">
+    <header>
+        <nav>
+            <ul class=" nav__links">
+                <li><a href="contactUs.html"> Contact us</a></li>
+                <li><a href="HomePage.html"> Home page</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <p style="color: rgb(0,128,96); border: 2px solid rgb(8, 9, 10);margin: 10px; padding: 10px; font-size: large;">
+        <h2>A Dogs Life</h2>
+        <img id="DogImg" src="../static/dog.jpg" alt="Dog">
+        <p id="pText"></p> <br>
+        <button id="buttonID" onclick="TypingText()">Featured Tip </button>
+    
+        <p>
             Hi everyone!  <br>
             this is the best dog page on the internet
         </p>
-        </center>
 
-        
-    
-    
-    <nav> 
-        <center>
-            <img src="../static/contact.png" alt="Dog2" width="30"> <br>
-            <a href="ContactUs.html"> Contact Us</a>
-         </center>
-    
-    </nav>
+    </div>
 </body>
 </html>
+
